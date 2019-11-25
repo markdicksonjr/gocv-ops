@@ -11,6 +11,7 @@ func Brighten(img *gocv.Mat, alpha float64) *gocv.Mat {
 	return &out
 }
 
+// Darken will darken an RGB image, but "fade out" an image with alpha
 func Darken(img *gocv.Mat, alpha float64) *gocv.Mat {
 	out := gocv.NewMat()
 	black := gocv.NewMatWithSize(img.Rows(), img.Cols(), img.Type())
